@@ -1,6 +1,6 @@
 {
   "name": "segi-cli",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "main": "./src/main.js",
   "license": "MIT",
   "desciption": "segi-cli",
@@ -12,6 +12,6 @@
     "commander": "^3.0.2",
     "download-git-repo": "^2.0.0",
     "inquirer": "^7.0.0",
-    "ora": "^4.0.2"
+    "ora": "^3.0.0"
   }
 }

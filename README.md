@@ -7,6 +7,7 @@ npm i segi-cli -g
 
 ## 使用
 ```javascript
-segi-cli
+segi-cli projectName
 ```
+segi-cli 加上项目名称
 
