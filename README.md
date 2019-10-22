@@ -15,13 +15,13 @@ segi-cli + the name of the project
 1. catalogue
 ![Image text](https://github.com/lronelove/segi-cli/blob/master/images/catalogue.png)
 this is the catalogue of the project, in fact, it works with [webpack](http://webpack.github.io/).
-there is the usage of these file:
-/static: you can put some resources here
-/src: no use now
-index.html: this a example which can resolve cross-domain access
-server.js: this a node server which can create a server listening at 3000
-webpack.config.js: this is a configuration of [webpack](http://webpack.github.io/), you can change it to satisfy your need
-webpack.dev.js: there is the content of the file
+there is the usage of these file:  
+/static: you can put some resources here  
+/src: no use now  
+index.html: this a example which can resolve cross-domain access  
+server.js: this a node server which can create a server listening at 3000  
+webpack.config.js: this is a configuration of [webpack](http://webpack.github.io/), you can change it to satisfy your need  
+webpack.dev.js: there is the content of the file  
 ```javascript
 const merge = require('webpack-merge');
 const common = require('./webpack.config.js');
