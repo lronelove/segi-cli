@@ -13,7 +13,7 @@ segi-cli + the name of the project
 
 ## introduction
 1. catalogue
-![Image text](https://github.com/lronelove/segi-cli/blob/master/images/catalogue.png)
+![Image text](https://raw.githubusercontent.com/lronelove/segi-cli/master/images/catalogue.png)
 this is the catalogue of the project, in fact, it works with [webpack](http://webpack.github.io/).
 there is the usage of these file:  
 /static: you can put some resources here  
