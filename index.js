@@ -12,7 +12,7 @@ function promiseDownload(projectName) {
   spinner.start()
 
   return new Promise((resolve, reject) => {
-    download('direct:https://github.com/lronelove/single-page-dec-cli.git', projectName, { clone: true }, (err) => {
+    download('direct:https://github.com/lronelove/single-page-dec-cli.git', projectName, { clone: false }, (err) => {
       if (err) {
         spinner.fail('下载失败！')
         reject(err)
@@ -29,7 +29,7 @@ program
   .version('v1.0', '-v, --version')
   .arguments('<projectName>')
   .alias('cp')
-  .description('segi-web-cli ')
+  .description('segi-web-cli')
   .action((name) => {
     let projectName = name || 'web'
     promiseDownload(projectName).catch(err => {
