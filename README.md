@@ -7,7 +7,7 @@ npm i segi-cli -g
 
 ## usage
 ```javascript
-segi-cli projectName
+segi-cli create projectName
 ```
 segi-cli + the name of the project
 

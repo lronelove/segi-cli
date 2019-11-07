@@ -4,6 +4,7 @@ const download = require('download-git-repo')
 const ora = require('ora')
 const commander = require('commander')
 
+const packageConfig = require('./package')
 const program = new commander.Command('segi-cli')
 
 // promice格式的下载
@@ -26,19 +27,25 @@ function promiseDownload(projectName) {
 }
 
 program
-  .version('v1.0', '-v, --version')
-  .arguments('<projectName>')
-  .alias('cp')
-  .description('segi-web-cli')
-  .action((name) => {
-    let projectName = name || 'web'
-    promiseDownload(projectName).catch(err => {
-      if (err) {
-        console.log('下载失败:', err)
-      }
-    })
+  .version('v' + packageConfig.version, '-v, --version')
+  .description(packageConfig.desciption)
+  .option('-d, --detail', '', 'a tool to resolve crossing origin')
+  .action((actionName, projectName) => {
+    if (actionName === 'create') {
+      let fileName = projectName || 'web'
+      promiseDownload(fileName).catch(err => {
+        if (err) {
+          console.log('下载失败:', err)
+        }
+      })
+    }
   })
 program.parse(process.argv)
+
+if (program.detail) {
+  console.log(`${program.detail}`)
+}
+
 
 
 
