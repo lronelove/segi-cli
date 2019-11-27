@@ -13,7 +13,7 @@ function promiseDownload(projectName) {
   spinner.start()
 
   return new Promise((resolve, reject) => {
-    download('direct:https://github.com/lronelove/single-page-dec-cli.git', projectName, { clone: false }, (err) => {
+    download('direct:https://github.com/lronelove/single-page-dec-cli.git', projectName, { clone: true }, (err) => {
       if (err) {
         spinner.fail('下载失败！')
         reject(err)
