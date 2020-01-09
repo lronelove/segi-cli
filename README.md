@@ -1,9 +1,3 @@
-<!--
- * @Descripttion: 
- * @Author: lronelove
- * @Date: 2020-01-09 10:49:53
- * @email: 657828543@qq.com
- -->
 # a tool to create a project which aims at resolving cross-domain access questions when we work with .html files 
  
 ## installation
