@@ -9,9 +9,19 @@ npm i segi-cli -g
 ```javascript
 segi-cli create projectName
 ```
-segi-cli create + the name of the project
+1. segi-cli create + the name of the project
+2. then you can choose which template that you need.
 
-## introduction
+## template type
+these are types of project template
+1. html: .html file project
+2. web: vue3.0 web project template
+3. mobile: h5 project template
+4. mobileTs: h5 project template which uses typescript
+5. webTs:  vue3.0 web project template which uses typescript
+6. miniProgram: mini-program for weChat project template which uses typescript
+
+## html template introduction
 1. catalogue
 ![Image text](https://raw.githubusercontent.com/lronelove/segi-cli/master/images/catalogue.png)
 this is the catalogue of the project, in fact, it works with [webpack](http://webpack.github.io/).
